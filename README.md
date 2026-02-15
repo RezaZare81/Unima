@@ -2,71 +2,56 @@
 
 ## 📌 Overview
 
-**Unima** is a web-based integrated platform designed to improve communication between students and professors in a university environment.
+**Unima** is a web-based integrated platform designed to streamline and manage academic interactions between students and professors.
 
-The system provides features such as:
+The system provides real-time communication, meeting management, and an automated meal reservation system within a unified platform.
 
-* Professor presence tracking (real-time)
-* Meeting request and scheduling
-* Real-time notifications using WebSocket
-* Student and professor dashboards
-* Automatic university meal reservation system
-* Interaction history and data tracking
-
-This project was developed as part of a university software engineering project.
-
-📄 **Full Project Proposal:**
-See full documentation here:
-👉 [Project Proposal](docs/P-Unima.pdf)
+📄 **Project Proposal:**
+Full system documentation is available here:
+👉 [docs/P-Unima.pdf](docs/P-Unima.pdf)
 
 ---
 
-## 🎯 Project Goals
+## 🎯 Objectives
 
-The main goal of Unima is to build a unified system that:
+The main objectives of this project are:
 
-* Eliminates fragmented communication channels
-* Improves meeting scheduling efficiency
-* Provides real-time interaction updates
-* Automates repetitive tasks like meal reservation
-* Improves user experience for both students and professors
+* Provide a centralized communication system
+* Enable real-time interaction between users
+* Manage meeting requests efficiently
+* Automate repetitive student services such as meal reservation
+* Improve academic workflow efficiency
 
 ---
 
-## 🧠 Key Features
+## 🧠 Core Features
 
-### 👨‍🏫 Professor Features
+### Professor
 
-* Set presence status (Available, Busy, Absent)
-* Manage meeting requests
+* Manage presence status
+* Accept or reject meeting requests
 * View interaction history
 * Receive real-time notifications
 * Manage weekly schedule
 
-### 🎓 Student Features
+### Student
 
 * View professor availability
-* Request meetings
-* Receive real-time notifications
-* View meeting history
-* Manual or automatic meal reservation
-* Dashboard overview
+* Send meeting requests
+* Receive instant notifications
+* Track interaction history
+* Reserve meals manually or automatically
 
-### 🔔 Real-Time System
+### System Features
 
-* WebSocket-based notifications
-* Instant updates without page refresh
-
-### 🍽️ Auto Meal Reservation
-
-* Automatic daily or weekly reservation
-* Simulated university meal API
-* Reservation history tracking
-* Error and success notification
+* Real-time notification system (WebSocket)
+* Automated meal reservation (Hangfire)
+* Integrated dashboard for all users
+* Structured academic interaction tracking
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Architecture
 
 ### Frontend
 
@@ -81,7 +66,7 @@ The main goal of Unima is to build a unified system that:
 * ASP.NET Core
 * Entity Framework Core
 * REST API
-* WebSocket
+* WebSocket (SignalR)
 
 ### Database
 
@@ -89,12 +74,12 @@ The main goal of Unima is to build a unified system that:
 
 ### Background Services
 
-* Hangfire (background job processing)
+* Hangfire
 
-### Deployment
+### Infrastructure
 
-* Docker (optional)
-* Local or cloud deployment
+* Docker
+* Amazon S3 (File Storage)
 
 ---
 
@@ -107,9 +92,7 @@ Unima/
 │   └── proposal.pdf
 │
 ├── frontend/
-│
 ├── backend/
-│
 ├── database/
 │
 └── README.md
@@ -117,70 +100,51 @@ Unima/
 
 ---
 
-## 🚀 How to Run
-
-### Backend
-
-1. Open solution in Visual Studio
-2. Configure database connection string
-3. Run migrations
-4. Start the server
-
-### Frontend
-
-Open index.html or run frontend project.
-
----
-
-## 🧪 Technologies Summary
-
-| Layer           | Technology               |
-| --------------- | ------------------------ |
-| Frontend        | HTML, CSS, Bootstrap, JS |
-| Backend         | ASP.NET Core             |
-| Database        | SQL Server               |
-| Real-Time       | WebSocket                |
-| Background Jobs | Hangfire                 |
-| ORM             | Entity Framework Core    |
-
----
-
 ## 📖 Documentation
 
-Full system documentation is available in:
+Complete project documentation is provided in:
 
 ```
 docs/proposal.pdf
 ```
 
-Includes:
+This includes:
 
 * System analysis
-* Architecture diagrams
-* Use Case diagram
-* ER diagram
-* UI design
+* Architecture design
+* Database design
+* Use Case, ER, and Class diagrams
+* UI design samples
 * Functional and non-functional requirements
 
 ---
 
-## 👨‍💻 Team Members
+## 👨‍💻 Team
 
 * Reza Zare
 * AmirReza Akhavan
 * Seyed Sajjad Tanha
+* Hamid Ghasemi
 
 Supervisor:
 Mohammad Sadegh Navab
 
 ---
 
-## 🎓 Academic Project
+## ⚙️ Deployment
 
-This project was developed for academic purposes as part of a university software engineering course.
+This project is designed using containerized infrastructure (Docker-based deployment).
+
+Setup and deployment configuration are defined within the project environment.
+
+---
+
+## 🎓 Academic Context
+
+This project was developed as part of a university academic software engineering project.
 
 ---
 
 ## 📄 License
 
-Educational Use Only
+This project is intended for academic and educational use.
